@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuuki Kumagai | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">YUUKI KUMAGAI</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#work" data-i18n="nav.work">Work</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="lang-switch">
+          <button data-lang="ja" class="lang-btn active">日本語</button>
+          <button data-lang="en" class="lang-btn">EN</button>
+          <button data-lang="vi" class="lang-btn">VI</button>
+          <button data-lang="fr" class="lang-btn">FR</button>
+        </div>
+        <div class="hero-text">
+          <div class="eyebrow" data-i18n="hero.eyebrow">Portfolio 2025・Personal Work</div>
+          <h1 data-i18n="hero.title">Designing emotional visuals.</h1>
+          <p class="hero-sub" data-i18n="hero.sub">感情に触れるビジュアルと、物語のある体験を。</p>
+          <p class="hero-desc" data-i18n="hero.desc">
+            青森出身・世界を旅しながら活動するクリエイター、熊谷宥輝です。<br>
+            デジタルアート、ミュージックビデオ、デジタル作品制作など、<br>
+            幅広い表現を行っています。
+          </p>
+          <div class="cta-buttons">
+            <a class="btn primary" href="#work" data-i18n="hero.ctaWork">View selected work</a>
+            <a class="btn ghost" href="#contact" data-i18n="hero.ctaContact">Contact / お問い合わせ</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="プロフィール写真.JPG" alt="Yuuki Kumagai profile photo">
+          <div class="hero-social">
+            <a href="https://www.instagram.com/kuma.385" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/share/1BqRB7p42a/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="works.title">Works</h2>
+
+        <div class="works-grid">
+
+          <div class="work-card">
+            <video controls playsinline preload="metadata" src="Breathing in the darkness.作品MV.MOV"></video>
+            <h3 class="work-title" data-i18n="works.mv1.title">MV: Breathing in the darkness</h3>
+          </div>
+
+          <div class="work-card">
+            <video controls playsinline preload="metadata" src="Sakura　agein MV 9：16 Without Text 2025-11-21-01-16-46.mov"></video>
+            <h3 class="work-title" data-i18n="works.mv2.title">MV: Sakura again</h3>
+          </div>
+
+          <div class="work-card">
+            <video controls playsinline preload="metadata" src="陰陽の宴(1)のMV作品.mov"></video>
+            <h3 class="work-title" data-i18n="works.mv3.title">MV: 陰陽の宴</h3>
+          </div>
+
+          <div class="work-card">
+            <video controls playsinline preload="metadata" src="天命ノ彼方へMV.作品.MOV"></video>
+            <h3 class="work-title" data-i18n="works.mv4.title">MV: 天命ノ彼方へ</h3>
+          </div>
+
+          <div class="work-card gallery-card" role="button" tabindex="0" data-images="ホーチミンデジタルアート展示会作品.png|ホーチミンデジタルアート展示会作品2.png|ホーチミンデジタルアート展示会作品3.png|ホーチミン展示会写真.png|ホーチミン展示会写真2.png" data-caption="Digital Art Exhibition (Vietnam, 2024)">
+            <img src="ホーチミンデジタルアート展示会作品.png" alt="ホーチミンのデジタルアート展示作品">
+            <h3 class="work-title" data-i18n="works.exhibition.title">Digital Art Exhibition (Vietnam, 2024)</h3>
+          </div>
+
+          <div class="work-card gallery-card" role="button" tabindex="0" data-images="作品サンプル画像.PNG|サンプル画像２.png|サンプル画像３.png|サンプル画像４.png|サンプル画像.mp4|サンプル.mp4|サンプル２.mp4|作品サンプル映像..mp4" data-caption="作品サンプル">
+            <img src="作品サンプル画像.PNG" alt="作品サンプル">
+            <h3 class="work-title" data-i18n="works.sample.title">作品サンプル</h3>
+          </div>
+
+          <div class="work-card">
+            <img src="KUKU.JPG" alt="KUKU 共同制作ビジュアル">
+            <a class="work-link" href="https://youtube.com/@kuku-treevillage?si=Cxg9ygeG1fOmWPpV" target="_blank" rel="noopener noreferrer">
+              <div class="link-label">YouTube</div>
+              <h3 class="work-title" data-i18n="works.collab.title">共同制作 (YouTubeリンク)</h3>
+              <p class="work-note" data-i18n="works.collab.note">共同制作した動画はこちら</p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div id="gallery-modal" class="gallery-modal" aria-hidden="true">
+      <div class="gallery-backdrop"></div>
+      <div class="gallery-dialog" role="dialog" aria-label="Gallery viewer">
+        <button class="gallery-close" aria-label="閉じる">×</button>
+        <div class="gallery-frame">
+          <button class="gallery-nav prev" aria-label="前の画像">‹</button>
+          <div class="gallery-media">
+            <img class="gallery-image" src="" alt="Gallery item">
+            <video class="gallery-video" controls playsinline></video>
+          </div>
+          <button class="gallery-nav next" aria-label="次の画像">›</button>
+        </div>
+        <div class="gallery-caption"></div>
+      </div>
+    </div>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="selected.title">Selected Projects</h2>
+          <p data-i18n="selected.desc">Digital art、ミュージックビデオ、LP制作などのセレクトワーク。</p>
+        </div>
+        <div class="grid work-grid">
+          <article class="card reveal">
+            <img class="card-media" src="kumabear0829_A_peaceful_Japanese-style_hilltop_with_soft_gras_6810fa0b-2260-43d8-9f8f-da3da48adc9f_3.png" alt="Kumabear digital art">
+            <div class="card-body">
+              <h3 data-i18n="selected.card1.title">Digital Art</h3>
+              <p data-i18n="selected.card1.body">Midjourney / Sora / NanoBanana などで作るビジュアル・MV。</p>
+              <div class="tags">
+                <span>#DigitalArt</span><span>#Visuals</span><span>#MV</span>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <video class="card-media" controls playsinline preload="metadata" src="翡翠.mov"></video>
+            <div class="card-body">
+              <h3 data-i18n="selected.card2.title">Music &amp; MV</h3>
+              <p data-i18n="selected.card2.body">オリジナル曲・Suno 等での制作、MVディレクション。</p>
+              <div class="tags">
+                <span>#Music</span><span>#MV</span><span>#Suno</span>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img class="card-media" src="パソコン.png" alt="LP制作用ビジュアル">
+            <div class="card-body">
+              <h3 data-i18n="selected.card3.title">LP制作</h3>
+              <p data-i18n="selected.card3.body">コンセプト設計からビジュアル・コピーまでの総合的なランディングページ制作。</p>
+              <div class="tags">
+                <span>#LP</span><span>#WebDesign</span><span>#Copywriting</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-wrapper">
+        <h2 class="section-title" data-i18n="about.title">About</h2>
+
+        <p class="about-text" data-i18n="about.body">
+          熊谷宥輝（Yuuki Kumagai）<br><br>
+          2022年より画像生成AIを中心としたデジタルアート制作を開始。<br>
+          2024年にはベトナムにてデジタルアート個展を開催。<br>
+          同年にはキッチンカー事業にもわずかに携わり、食とクリエイティブの両軸で活動を広げ始める。<br>
+          2025年、イベント出演のためフランスでラーメンを提供し、海外での活動を拡大。<br>
+          2025年からはMV制作を中心に活動を開始し、音楽 × 物語 × 生成AI を用いた作品制作を本格化。<br>
+          <br>
+          現在は、映像・音楽・画像生成AIを組み合わせた独自の世界観を追求し、作品制作を続けている。
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="services.title">Services</h2>
+          <p data-i18n="services.desc">デザイン・クリエイティブ・LP制作の3軸でサポートします。</p>
+        </div>
+        <div class="grid services-grid">
+          <article class="service-card reveal">
+            <div class="icon-circle"></div>
+            <h3 data-i18n="services.card1.title">Visual &amp; Brand Design</h3>
+            <p data-i18n="services.card1.body">ロゴ、キービジュアル、SNS用クリエイティブ。</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-pulse"></div>
+            <h3 data-i18n="services.card2.title">Creative Direction</h3>
+            <p data-i18n="services.card2.body">映像・音楽・生成AIを用いたコンセプト設計とクリエイティブ統括。</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="icon-line"></div>
+            <h3 data-i18n="services.card3.title">LP制作</h3>
+            <p data-i18n="services.card3.body">コンセプト設計からビジュアル・コピーまで、成果に直結するLPを制作。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-text">
+            <h2 data-i18n="contact.title">Let’s create something together.</h2>
+            <p data-i18n="contact.desc">デジタルアートの制作からMV制作等LP制作などメール、SNSにてご相談ください。</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:ted4461@gmail.com" class="contact-link">ted4461@gmail.com</a>
+            <div class="social-links">
+              <a href="https://www.instagram.com/kuma.385" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.facebook.com/share/1BqRB7p42a/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </div>
+            <a class="btn ghost" href="#" role="button" data-i18n="contact.cv">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Yuuki Kumagai — Designed with AI &amp; curiosity.</span>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    const modal = document.getElementById('gallery-modal');
+    const modalMedia = modal?.querySelector('.gallery-media');
+    const modalImg = modal?.querySelector('.gallery-image');
+    const modalVideo = modal?.querySelector('.gallery-video');
+    const modalCaption = modal?.querySelector('.gallery-caption');
+    const modalClose = modal?.querySelector('.gallery-close');
+    const modalBackdrop = modal?.querySelector('.gallery-backdrop');
+    const prevBtn = modal?.querySelector('.gallery-nav.prev');
+    const nextBtn = modal?.querySelector('.gallery-nav.next');
+
+    let galleryImages = [];
+    let galleryIndex = 0;
+    let galleryTitle = '';
+
+    const isVideo = (url) => /\.(mp4|mov|webm|m4v)$/i.test(url);
+
+    const updateGallery = () => {
+      const current = galleryImages[galleryIndex];
+      const videoMode = isVideo(current);
+
+      if (modalMedia) modalMedia.classList.toggle('show-video', videoMode);
+
+      if (videoMode) {
+        if (modalVideo) {
+          modalVideo.pause();
+          modalVideo.src = current;
+          modalVideo.load();
+        }
+        if (modalImg) modalImg.src = '';
+      } else {
+        if (modalImg) modalImg.src = current;
+        if (modalVideo) {
+          modalVideo.pause();
+          modalVideo.removeAttribute('src');
+        }
+      }
+
+      const total = galleryImages.length;
+      const label = galleryTitle ? `${galleryTitle} (${galleryIndex + 1}/${total})` : `${galleryIndex + 1}/${total}`;
+      if (modalCaption) modalCaption.textContent = label;
+      if (prevBtn) prevBtn.disabled = galleryIndex === 0;
+      if (nextBtn) nextBtn.disabled = galleryIndex === total - 1;
+    };
+
+    const openGallery = (images, title) => {
+      if (!modal || !modalImg || images.length === 0) return;
+      galleryImages = images;
+      galleryIndex = 0;
+      galleryTitle = title || '';
+      updateGallery();
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('no-scroll');
+    };
+
+    const closeGallery = () => {
+      if (!modal) return;
+      if (modalVideo) {
+        modalVideo.pause();
+        modalVideo.removeAttribute('src');
+      }
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('no-scroll');
+    };
+
+    const changeImage = (delta) => {
+      const nextIndex = galleryIndex + delta;
+      if (nextIndex < 0 || nextIndex >= galleryImages.length) return;
+      galleryIndex = nextIndex;
+      updateGallery();
+    };
+
+    modalClose?.addEventListener('click', closeGallery);
+    modalBackdrop?.addEventListener('click', closeGallery);
+    prevBtn?.addEventListener('click', () => changeImage(-1));
+    nextBtn?.addEventListener('click', () => changeImage(1));
+
+    document.addEventListener('keydown', (e) => {
+      if (!modal?.classList.contains('open')) return;
+      if (e.key === 'Escape') closeGallery();
+      if (e.key === 'ArrowLeft') changeImage(-1);
+      if (e.key === 'ArrowRight') changeImage(1);
+    });
+
+    document.querySelectorAll('.gallery-card').forEach((card) => {
+      const openFromCard = () => {
+        const raw = card.dataset.images || '';
+        const images = raw.split('|').map((s) => s.trim()).filter(Boolean);
+        const title = card.dataset.caption || '';
+        openGallery(images, title);
+      };
+      card.addEventListener('click', openFromCard);
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openFromCard();
+        }
+      });
+    });
+
+    // Language switching
+    const translations = {
+      ja: {
+        'nav.work': 'Work',
+        'nav.about': 'About',
+        'nav.services': 'Services',
+        'nav.contact': 'Contact',
+        'hero.eyebrow': 'Portfolio 2025・Personal Work',
+        'hero.title': 'Designing emotional visuals.',
+        'hero.sub': '感情に触れるビジュアルと、物語のある体験を。',
+        'hero.desc': '青森出身・世界を旅しながら活動するクリエイター、熊谷宥輝です。<br>デジタルアート、ミュージックビデオ、デジタル作品制作など、<br>幅広い表現を行っています。',
+        'hero.ctaWork': 'View selected work',
+        'hero.ctaContact': 'Contact / お問い合わせ',
+        'works.title': 'Works',
+        'works.mv1.title': 'MV: Breathing in the darkness',
+        'works.mv2.title': 'MV: Sakura again',
+        'works.mv3.title': 'MV: 陰陽の宴',
+        'works.mv4.title': 'MV: 天命ノ彼方へ',
+        'works.exhibition.title': 'Digital Art Exhibition (Vietnam, 2024)',
+        'works.sample.title': '作品サンプル',
+        'works.collab.title': '共同制作 (YouTubeリンク)',
+        'works.collab.note': '共同制作した動画はこちら',
+        'selected.title': 'Selected Projects',
+        'selected.desc': 'Digital art、ミュージックビデオ、LP制作などのセレクトワーク。',
+        'selected.card1.title': 'Digital Art',
+        'selected.card1.body': 'Midjourney / Sora / NanoBanana などで作るビジュアル・MV。',
+        'selected.card2.title': 'Music & MV',
+        'selected.card2.body': 'オリジナル曲・Suno 等での制作、MVディレクション。',
+        'selected.card3.title': 'LP制作',
+        'selected.card3.body': 'コンセプト設計からビジュアル・コピーまでの総合的なランディングページ制作。',
+        'about.title': 'About',
+        'about.body': '熊谷宥輝（Yuuki Kumagai）<br><br>2022年より画像生成AIを中心としたデジタルアート制作を開始。<br>2024年にはベトナムにてデジタルアート個展を開催。<br>同年にはキッチンカー事業にもわずかに携わり、食とクリエイティブの両軸で活動を広げ始める。<br>2025年、イベント出演のためフランスでラーメンを提供し、海外での活動を拡大。<br>2025年からはMV制作を中心に活動を開始し、音楽 × 物語 × 生成AI を用いた作品制作を本格化。<br><br>現在は、映像・音楽・画像生成AIを組み合わせた独自の世界観を追求し、作品制作を続けている。',
+        'services.title': 'Services',
+        'services.desc': 'デザイン・クリエイティブ・LP制作の3軸でサポートします。',
+        'services.card1.title': 'Visual & Brand Design',
+        'services.card1.body': 'ロゴ、キービジュアル、SNS用クリエイティブ。',
+        'services.card2.title': 'Creative Direction',
+        'services.card2.body': '映像・音楽・生成AIを用いたコンセプト設計とクリエイティブ統括。',
+        'services.card3.title': 'LP制作',
+        'services.card3.body': 'コンセプト設計からビジュアル・コピーまで、成果に直結するLPを制作。',
+        'contact.title': 'Let’s create something together.',
+        'contact.desc': 'デザイン・デジタルアートの制作からMV制作等LP制作などメール、SNSにてご相談ください。',
+        'contact.cv': 'Download CV'
+      },
+      en: {
+        'nav.work': 'Work',
+        'nav.about': 'About',
+        'nav.services': 'Services',
+        'nav.contact': 'Contact',
+        'hero.eyebrow': 'Portfolio 2025・Personal Work',
+        'hero.title': 'Designing emotional visuals.',
+        'hero.sub': 'Visuals that move emotions, stories that stay with you.',
+        'hero.desc': 'I’m Yuuki Kumagai, a creator traveling the world from Aomori.<br>I work across digital art, music videos, and diverse creative productions.<br>Let’s craft experiences that resonate.',
+        'hero.ctaWork': 'View selected work',
+        'hero.ctaContact': 'Contact',
+        'works.title': 'Works',
+        'works.mv1.title': 'MV: Breathing in the darkness',
+        'works.mv2.title': 'MV: Sakura again',
+        'works.mv3.title': 'MV: Yin-Yang Feast',
+        'works.mv4.title': 'MV: Beyond Destiny',
+        'works.exhibition.title': 'Digital Art Exhibition (Vietnam, 2024)',
+        'works.sample.title': 'Works Sample',
+        'works.collab.title': 'Collaboration (YouTube link)',
+        'works.collab.note': 'See our collaborative videos here',
+        'selected.title': 'Selected Projects',
+        'selected.desc': 'Curated works: digital art, music videos, and LP production.',
+        'selected.card1.title': 'Digital Art',
+        'selected.card1.body': 'Visuals and MVs created with Midjourney / Sora / NanoBanana.',
+        'selected.card2.title': 'Music & MV',
+        'selected.card2.body': 'Original tracks, Suno productions, and MV direction.',
+        'selected.card3.title': 'LP Production',
+        'selected.card3.body': 'From concept to visuals and copy, full landing page delivery.',
+        'about.title': 'About',
+        'about.body': 'Yuuki Kumagai<br><br>Started creating digital art with image-generation AI in 2022.<br>Held a digital art solo exhibition in Vietnam in 2024.<br>Dabbled in a kitchen-car business the same year, expanding across food and creativity.<br>In 2025, provided ramen at an event in France, extending overseas activity.<br>Since 2025, focusing on MV production using music × storytelling × generative AI.<br><br>Pursuing a unique world that fuses film, music, and generative visuals.',
+        'services.title': 'Services',
+        'services.desc': 'We support you across design, creative direction, and LP production.',
+        'services.card1.title': 'Visual & Brand Design',
+        'services.card1.body': 'Logos, key visuals, and social media creatives.',
+        'services.card2.title': 'Creative Direction',
+        'services.card2.body': 'Concept design and creative lead using video, music, and generative AI.',
+        'services.card3.title': 'LP Production',
+        'services.card3.body': 'From concept to visuals and copy for high-converting landing pages.',
+        'contact.title': 'Let’s create something together.',
+        'contact.desc': 'From design and digital art to MV and LP production, reach out via email or socials.',
+        'contact.cv': 'Download CV'
+      },
+      vi: {
+        'nav.work': 'Work',
+        'nav.about': 'About',
+        'nav.services': 'Services',
+        'nav.contact': 'Contact',
+        'hero.eyebrow': 'Portfolio 2025・Personal Work',
+        'hero.title': 'Thiết kế hình ảnh giàu cảm xúc.',
+        'hero.sub': 'Hình ảnh chạm đến cảm xúc và những câu chuyện ở lại.',
+        'hero.desc': 'Tôi là Yuuki Kumagai, người sáng tạo đến từ Aomori và làm việc toàn cầu.<br>Tôi thực hiện nghệ thuật số, MV và các sản phẩm sáng tạo đa dạng.<br>Hãy cùng tạo nên những trải nghiệm đáng nhớ.',
+        'hero.ctaWork': 'Xem dự án chọn lọc',
+        'hero.ctaContact': 'Liên hệ',
+        'works.title': 'Works',
+        'works.mv1.title': 'MV: Breathing in the darkness',
+        'works.mv2.title': 'MV: Sakura again',
+        'works.mv3.title': 'MV: Yin-Yang Feast',
+        'works.mv4.title': 'MV: Beyond Destiny',
+        'works.exhibition.title': 'Triển lãm Nghệ thuật số (Việt Nam, 2024)',
+        'works.sample.title': 'Mẫu tác phẩm',
+        'works.collab.title': 'Hợp tác (liên kết YouTube)',
+        'works.collab.note': 'Xem video hợp tác tại đây',
+        'selected.title': 'Selected Projects',
+        'selected.desc': 'Tuyển tập nghệ thuật số, MV và sản xuất LP.',
+        'selected.card1.title': 'Nghệ thuật số',
+        'selected.card1.body': 'Tạo hình ảnh và MV với Midjourney / Sora / NanoBanana.',
+        'selected.card2.title': 'Music & MV',
+        'selected.card2.body': 'Nhạc gốc, sản xuất Suno và đạo diễn MV.',
+        'selected.card3.title': 'Sản xuất LP',
+        'selected.card3.body': 'Từ concept đến hình ảnh và nội dung cho landing page hiệu quả.',
+        'about.title': 'About',
+        'about.body': 'Yuuki Kumagai<br><br>Bắt đầu nghệ thuật số với AI tạo ảnh từ 2022.<br>Triển lãm nghệ thuật số cá nhân tại Việt Nam năm 2024.<br>Tham gia kinh doanh xe bếp, mở rộng hoạt động giữa ẩm thực và sáng tạo.<br>Năm 2025 phục vụ ramen tại Pháp cho sự kiện, mở rộng hoạt động quốc tế.<br>Từ 2025 tập trung sản xuất MV với âm nhạc × câu chuyện × AI sinh nội dung.<br><br>Tiếp tục theo đuổi thế giới quan kết hợp phim, âm nhạc và AI tạo hình.',
+        'services.title': 'Services',
+        'services.desc': 'Hỗ trợ qua thiết kế, đạo diễn sáng tạo và sản xuất LP.',
+        'services.card1.title': 'Thiết kế thương hiệu & hình ảnh',
+        'services.card1.body': 'Logo, key visual, và nội dung cho mạng xã hội.',
+        'services.card2.title': 'Creative Direction',
+        'services.card2.body': 'Thiết kế concept và dẫn dắt sáng tạo với video, âm nhạc, AI sinh nội dung.',
+        'services.card3.title': 'Sản xuất LP',
+        'services.card3.body': 'Từ concept đến hình ảnh và nội dung cho landing page chuyển đổi cao.',
+        'contact.title': 'Hãy cùng tạo nên điều gì đó.',
+        'contact.desc': 'Từ thiết kế và nghệ thuật số đến sản xuất MV và LP, hãy liên hệ qua email hoặc mạng xã hội.',
+        'contact.cv': 'Tải CV'
+      },
+      fr: {
+        'nav.work': 'Work',
+        'nav.about': 'About',
+        'nav.services': 'Services',
+        'nav.contact': 'Contact',
+        'hero.eyebrow': 'Portfolio 2025・Travaux personnels',
+        'hero.title': 'Concevoir des visuels émotionnels.',
+        'hero.sub': 'Des visuels qui touchent l’émotion, des histoires mémorables.',
+        'hero.desc': 'Je suis Yuuki Kumagai, créateur originaire d’Aomori, actif dans le monde entier.<br>Je réalise art numérique, clips musicaux et divers projets créatifs.<br>Créons ensemble des expériences marquantes.',
+        'hero.ctaWork': 'Voir les projets',
+        'hero.ctaContact': 'Contact',
+        'works.title': 'Works',
+        'works.mv1.title': 'MV : Breathing in the darkness',
+        'works.mv2.title': 'MV : Sakura again',
+        'works.mv3.title': 'MV : Yin-Yang Feast',
+        'works.mv4.title': 'MV : Beyond Destiny',
+        'works.exhibition.title': 'Exposition d’art numérique (Vietnam, 2024)',
+        'works.sample.title': 'Échantillons d’œuvres',
+        'works.collab.title': 'Collaboration (lien YouTube)',
+        'works.collab.note': 'Voir les vidéos collaboratives ici',
+        'selected.title': 'Selected Projects',
+        'selected.desc': 'Sélection d’art numérique, de clips et de landing pages.',
+        'selected.card1.title': 'Art numérique',
+        'selected.card1.body': 'Visuels et MVs avec Midjourney / Sora / NanoBanana.',
+        'selected.card2.title': 'Music & MV',
+        'selected.card2.body': 'Titres originaux, productions Suno et direction de clips.',
+        'selected.card3.title': 'Production de LP',
+        'selected.card3.body': 'Du concept aux visuels et au texte pour des landing pages performantes.',
+        'about.title': 'About',
+        'about.body': 'Yuuki Kumagai<br><br>A débuté l’art numérique avec l’IA générative en 2022.<br>Exposition personnelle d’art numérique au Vietnam en 2024.<br>A participé à un food truck la même année, mêlant gastronomie et création.<br>En 2025, a servi des ramen lors d’un événement en France, élargissant son activité à l’international.<br>Depuis 2025, se concentre sur la production de MVs avec musique × récit × IA générative.<br><br>Il poursuit un univers qui combine film, musique et images génératives.',
+        'services.title': 'Services',
+        'services.desc': 'Accompagnement en design, direction créative et production de LP.',
+        'services.card1.title': 'Design visuel et branding',
+        'services.card1.body': 'Logos, key visuals et créations pour les réseaux sociaux.',
+        'services.card2.title': 'Creative Direction',
+        'services.card2.body': 'Concept et direction créative avec vidéo, musique et IA générative.',
+        'services.card3.title': 'Production de LP',
+        'services.card3.body': 'Du concept aux visuels et aux textes pour des landing pages efficaces.',
+        'contact.title': 'Créons quelque chose ensemble.',
+        'contact.desc': 'Pour le design, l’art numérique, la production de MV et de LP, contactez-moi par email ou via les réseaux.',
+        'contact.cv': 'Télécharger le CV'
+      }
+    };
+
+    const applyLanguage = (lang) => {
+      const dict = translations[lang] || translations.ja;
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.dataset.i18n;
+        const val = dict[key];
+        if (typeof val === 'string') {
+          el.innerHTML = val;
+        }
+      });
+      document.querySelectorAll('.lang-btn').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      document.documentElement.lang = lang;
+    };
+
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
+      btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
+    });
+
+    // set default language
+    applyLanguage('ja');
+  </script>
+</body>
+</html>
